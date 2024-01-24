@@ -10,7 +10,7 @@ import StarIcon from '@mui/icons-material/Star';
 const Sidebar = () => {
     return (
         //de querer revisar los limites usar bgcolor="pink" 
-        <Box flex={1} p={2} alignItems="center">
+        <Box  flex={1} p={2} alignItems="center">
             <img src={"https://www.qschina.cn/sites/default/files/profiles/logos/universidad-de-lima_592560cf2aeae70239af5157_large.jpg"} alt="Logo Ulima" style={{ width: 128, height: 127, marginLeft: 51, marginRight: 51 }} />
             <TextField
                 label="Busca"

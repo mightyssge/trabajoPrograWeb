@@ -4,7 +4,7 @@ import ContentMenuPelis from './components/ContentMenuPelis.jsx';
 import {Box , Stack} from "@mui/material";
 
 
-function App() {
+function MenuPelisPage() {
     return (
 
       //esto es el contenido de los menus
@@ -19,4 +19,4 @@ function App() {
     );
   }
 
-export default App;
+export default MenuPelisPage;
