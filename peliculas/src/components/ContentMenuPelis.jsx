@@ -22,8 +22,7 @@ const ContentMenuPelis = () => {
                             <Paper>
                                 <CardMedia
                                     component="img"
-                                    height="200"
-                                    image="https://via.placeholder.com/200"
+                                    image="https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001896?referenceScheme=HeadOffice&allowPlaceHolder=true"
                                     alt="Imagen"
                                 />
                             </Paper>
@@ -49,8 +48,7 @@ const ContentMenuPelis = () => {
                             <Paper>
                                 <CardMedia
                                     component="img"
-                                    height="200"
-                                    image="https://via.placeholder.com/200"
+                                    image="https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001883?referenceScheme=HeadOffice&allowPlaceHolder=true"
                                     alt="Imagen"
                                 />
                             </Paper>
@@ -76,8 +74,7 @@ const ContentMenuPelis = () => {
                             <Paper>
                                 <CardMedia
                                     component="img"
-                                    height="200"
-                                    image="https://via.placeholder.com/200"
+                                    image="https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001897?referenceScheme=HeadOffice&allowPlaceHolder=true"
                                     alt="Imagen"
                                 />
                             </Paper>
@@ -105,8 +102,7 @@ const ContentMenuPelis = () => {
                             <Paper>
                                 <CardMedia
                                     component="img"
-                                    height="200"
-                                    image="https://via.placeholder.com/200"
+                                    image="https://via.placeholder.com/226x339"
                                     alt="Imagen"
                                 />
                             </Paper>
@@ -132,8 +128,7 @@ const ContentMenuPelis = () => {
                             <Paper>
                                 <CardMedia
                                     component="img"
-                                    height="200"
-                                    image="https://via.placeholder.com/200"
+                                    image="https://m.media-amazon.com/images/M/MV5BZGE1MDg5M2MtNTkyZS00MTY5LTg1YzUtZTlhZmM1Y2EwNmFmXkEyXkFqcGdeQXVyNjA3OTI0MDc@._V1_.jpg"
                                     alt="Imagen"
                                 />
                             </Paper>
@@ -159,8 +154,7 @@ const ContentMenuPelis = () => {
                             <Paper>
                                 <CardMedia
                                     component="img"
-                                    height="200"
-                                    image="https://via.placeholder.com/200"
+                                    image="https://static.wikia.nocookie.net/doblaje/images/9/93/Alice_la_gemela_del_diablo_portada.jpg"
                                     alt="Imagen"
                                 />
                             </Paper>
@@ -188,8 +182,7 @@ const ContentMenuPelis = () => {
                             <Paper>
                                 <CardMedia
                                     component="img"
-                                    height="200"
-                                    image="https://via.placeholder.com/200"
+                                    image="https://imgmedia.larepublica.pe/640x947/larepublica/original/2024/01/04/6596cfe9366122339f192870.webp"
                                     alt="Imagen"
                                 />
                             </Paper>
@@ -215,8 +208,7 @@ const ContentMenuPelis = () => {
                             <Paper>
                                 <CardMedia
                                     component="img"
-                                    height="200"
-                                    image="https://via.placeholder.com/200"
+                                    image="https://via.placeholder.com/226x339"
                                     alt="Imagen"
                                 />
                             </Paper>
@@ -242,8 +234,7 @@ const ContentMenuPelis = () => {
                             <Paper>
                                 <CardMedia
                                     component="img"
-                                    height="200"
-                                    image="https://via.placeholder.com/200"
+                                    image="https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001895?referenceScheme=HeadOffice&allowPlaceHolder=true"
                                     alt="Imagen"
                                 />
                             </Paper>
