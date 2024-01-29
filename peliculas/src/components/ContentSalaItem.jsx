@@ -3,7 +3,8 @@ import { Container, Box, Button, TextField, Divider, Stack, Grid, Card, Paper,Av
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Chip from '@mui/material/Chip';
 import Typography from '@mui/material/Typography';
-const SalaItemPage = () => {
+
+const ContentSalaItem = () => {
 
   return (
     
@@ -280,4 +281,4 @@ const SalaItemPage = () => {
 };
 
 
-export default SalaItemPage;
+export default ContentSalaItem;

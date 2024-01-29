@@ -3,7 +3,9 @@ import { Container, Box, Button, TextField, Divider, Stack, Grid, Card, Paper,Av
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Chip from '@mui/material/Chip';
 import Typography from '@mui/material/Typography';
-const PeliculasDetallePage = () => {
+
+
+const ContentPeliculasItem = () => {
 
   return (
     
@@ -286,4 +288,4 @@ const PeliculasDetallePage = () => {
   );
 };
 
-export default PeliculasDetallePage;
+export default ContentPeliculasItem;

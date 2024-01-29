@@ -1,19 +1,19 @@
 import Header from './components/Header.jsx';
-import ContentMenuSalas from './components/ContentSalasIndex.jsx';
+import ContentSalasIndex from './components/ContentSalasIndex.jsx';
 import {Box , Stack} from "@mui/material";
 
 
-function MenuSalasPage() {
+function SalaIndexPage() {
     return (
 
       <Box>
         <Header/>
         <Stack direction="row" spacing={2} justifyContent="space-between">
-          <ContentMenuSalas/>
+          <ContentSalasIndex/>
         </Stack>
       </Box>
     
     );
   }
 
-export default MenuSalasPage;
+export default SalaIndexPage;

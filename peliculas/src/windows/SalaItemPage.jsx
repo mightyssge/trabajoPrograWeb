@@ -1,11 +1,9 @@
 import Header from './components/Header.jsx';
-import Sidebar from './components/Sidebar.jsx';
-import ContentMenuPelis from './components/ContentMenuPelis.jsx';
 import {Box , Stack} from "@mui/material";
 import ContentSalaItem from './components/ContentSalaItem.jsx'
 
 
-function MenuPelisPage() {
+function SalaItemPage() {
     return (
 
       //esto es el contenido de los menus
@@ -21,4 +19,4 @@ function MenuPelisPage() {
     );
   }
 
-export default MenuPelisPage;
+export default SalaItemPage;
