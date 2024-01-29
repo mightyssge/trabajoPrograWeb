@@ -9,8 +9,8 @@ function App() {
       <Header />
 
       {/*En esta parte ponen su codigo para probar */}
-      <Stack direction="row" spacing={2} justifyContent="space-between">
-        <ContentMenuPelis />
+      <Stack direction="row" spacing={2} justifyContent="space-between" >
+        <ContentMenuPelis /> {/*En esta parte ponen su codigo para probar */}
       </Stack>
       {/*En esta parte ponen su codigo para probar */}
 

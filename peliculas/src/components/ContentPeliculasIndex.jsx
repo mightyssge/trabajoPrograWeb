@@ -16,7 +16,7 @@ const ContentMenuPelis = () => {
             <Box 
              sx={{ mt: 3, padding: '19px 24px 0 24px' }} >
 
-                <Grid container spacing={2} bgcolor="pink">
+                <Grid container spacing={2} >
 
                     {/*Card 1*/}
                     <Grid item md={4}>

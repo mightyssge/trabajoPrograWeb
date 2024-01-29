@@ -16,8 +16,6 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
 import StarIcon from '@mui/icons-material/Star';
 import TextField from '@mui/material/TextField';
 
@@ -101,38 +99,38 @@ export default function Header() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 ,mb:8}} >
+    <Box sx={{ flexGrow: 1, mb: 8 }} >
       <CssBaseline />
 
-      
-        
-        <AppBar position="fixed" sx={{ background: "rgb(250, 117, 37)" }}>
-          <Toolbar>
 
-            <IconButton
-              size="large"
-              edge="start"
-              color="inherit"
-              aria-label="menu"
-              sx={{ mr: 2 }}
-              onClick={() => { setOpen(!open) }}
-            >
-              <MenuIcon />
-            </IconButton>
 
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Salas de cine ULima
-            </Typography>
+      <AppBar position="fixed" sx={{ background: "rgb(250, 117, 37)" }}>
+        <Toolbar>
 
-            <StarIcon sx={{ mx: '8px' }} />
-            <StarIcon sx={{ mx: '8px' }} />
-            <StarIcon sx={{ mx: '8px' }} />
-            <StarIcon sx={{ mx: '8px' }} />
-            <StarIcon sx={{ mx: '8px' }} />
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+            onClick={() => { setOpen(!open) }}
+          >
+            <MenuIcon />
+          </IconButton>
 
-          </Toolbar>
-        </AppBar>
-      
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            Salas de cine ULima
+          </Typography>
+
+          <StarIcon sx={{ mx: '8px' }} />
+          <StarIcon sx={{ mx: '8px' }} />
+          <StarIcon sx={{ mx: '8px' }} />
+          <StarIcon sx={{ mx: '8px' }} />
+          <StarIcon sx={{ mx: '8px' }} />
+
+        </Toolbar>
+      </AppBar>
+
 
 
       <Drawer variant="permanent" open={open}>
@@ -145,15 +143,15 @@ export default function Header() {
 
         <Divider />
 
-        
-          <img src={"https://www.qschina.cn/sites/default/files/profiles/logos/universidad-de-lima_592560cf2aeae70239af5157_large.jpg"} alt="Logo Ulima" style={{ width: 128, height: 127, marginLeft: 51, marginRight: 51, marginTop: 24 }} />
-          <TextField
-            label="Busca"
-            variant="outlined"
-            margin="normal"
-            sx={{ mx: 2}}
-          />
-        
+
+        <img src={"https://www.qschina.cn/sites/default/files/profiles/logos/universidad-de-lima_592560cf2aeae70239af5157_large.jpg"} alt="Logo Ulima" style={{ width: 128, height: 127, marginLeft: 51, marginRight: 51, marginTop: 24 }} />
+        <TextField
+          label="Busca"
+          variant="outlined"
+          margin="normal"
+          sx={{ mx: 2 }}
+        />
+
 
         <List>
 
