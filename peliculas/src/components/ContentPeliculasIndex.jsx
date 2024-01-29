@@ -13,10 +13,12 @@ const ContentMenuPelis = () => {
             </Typography>
 
 
-            <Box  sx={{ mt: 3, padding: '19px 24px 0 24px' }}>
+            <Box 
+             sx={{ mt: 3, padding: '19px 24px 0 24px' }} >
 
-                <Grid container spacing={2}>
+                <Grid container spacing={2} bgcolor="pink">
 
+                    {/*Card 1*/}
                     <Grid item md={4}>
                         <Card>
                             <Paper>
@@ -43,6 +45,8 @@ const ContentMenuPelis = () => {
                             </Paper>
                         </Card>
                     </Grid>
+                    {/*FIN Card 1*/}
+
                     <Grid item md={4}>
                         <Card>
                             <Paper>

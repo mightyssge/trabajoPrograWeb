@@ -1,22 +1,22 @@
+import React from 'react';
 import Header from './components/Header.jsx';
-import Sidebar from './components/Sidebar.jsx';
-import ContentMenuPelis from './components/ContentMenuPelis.jsx';
-import {Box , Stack} from "@mui/material";
-
+import ContentMenuPelis from './components/ContentPeliculasIndex.jsx';
+import { Container, Stack } from "@mui/material";
 
 function App() {
-    return (
+  return (
+    <Container className='container'>      
+      <Header />
 
-      //esto es el contenido de los menus
-      <Box>
-        <Header/>
-        <Stack direction="row" spacing={2} justifyContent="space-between">
-          <Sidebar/>
-          <ContentMenuPelis/>
-        </Stack>
-      </Box>
-    
-    );
-  }
+      {/*En esta parte ponen su codigo para probar */}
+      <Stack direction="row" spacing={2} justifyContent="space-between">
+        <ContentMenuPelis />
+      </Stack>
+      {/*En esta parte ponen su codigo para probar */}
+
+    </Container>
+  );
+}
 
 export default App;
+
