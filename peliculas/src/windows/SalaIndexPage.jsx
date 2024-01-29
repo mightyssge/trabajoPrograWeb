@@ -1,17 +1,17 @@
-import Header from './components/Header.jsx';
-import ContentSalasIndex from './components/ContentSalasIndex.jsx';
-import {Box , Stack} from "@mui/material";
+import Header from '../components/Header.jsx';
+import ContentSalasIndex from '../components/ContentSalasIndex.jsx';
+import { Container,Stack } from "@mui/material";
 
 
 function SalaIndexPage() {
     return (
 
-      <Box>
+      <Container className='container'>
         <Header/>
         <Stack direction="row" spacing={2} justifyContent="space-between">
           <ContentSalasIndex/>
         </Stack>
-      </Box>
+      </Container>
     
     );
   }

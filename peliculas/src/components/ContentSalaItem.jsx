@@ -3,6 +3,7 @@ import { Container, Box, Button, TextField, Divider, Stack, Grid, Card, Paper,Av
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Chip from '@mui/material/Chip';
 import Typography from '@mui/material/Typography';
+import { Link } from "react-router-dom"
 
 const ContentSalaItem = () => {
 
@@ -101,7 +102,7 @@ const ContentSalaItem = () => {
             
           }}
         >
-          <Typography variant="h5" style={{ fontSize:'12px', color:"rgba(151, 71, 255, 1)" }}>15:00</Typography>
+          <Link to={'/peliculasReserva/:id'}><Typography variant="h5" style={{ fontSize:'12px', color:"rgba(151, 71, 255, 1)" }}>15:00</Typography></Link>
         </Box>
 
         <Box

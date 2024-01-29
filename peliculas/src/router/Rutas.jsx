@@ -1,46 +1,50 @@
 import { createHashRouter } from "react-router-dom"
 
-import SalaIndexPage from "../SalaIndexPage"
-
-import SalaItemPage from "../SalaItemPage"
-
-import PeliculasIndexPage from "../PeliculasIndexPage"
-
+import SalaIndexPage from "../windows/SalaIndexPage"
+import SalaItemPage from "../windows/SalaItemPage"
+import PeliculasIndexPage from "../windows/PeliculasIndexPage"
 import PeliculasItemPage from "../windows/PeliculasItemPage"
+import PeliculasReserva from "../windows/PeliculasReservaPage"
 
-import Login from "../PeliculasReservaPage"
-import MenuPage from "../MenuPage"
+//CESAR
+//import Login from "../windows/LoginPage"
+//import Register from "../windows/RegisterPage"
+//import Recover from "../windows/RecoverPage"
 
 const Rutas = () => {
     return createHashRouter([
         {
             path: "/",
-            element: <Login />
+            element: <PeliculasIndexPage /> //reemplazar por login despues
         },
         {
-            path: "/salas",
+            path: "/salaIndex",
             element: <SalaIndexPage />
         },
         {
-            path: "/salas/:id",
+            path: "/salaIndex/:id",
             element: <SalaItemPage />
         },
         {
-            path: "/peliculas-index",
+            path: "/peliculasIndex",
             element: <PeliculasIndexPage />
         },
         {
-            path: "/peliculas-detalle/:id",
-            element: <PeliculasDetallePage />
+            path: "/peliculasItem/:id",
+            element: <PeliculasItemPage />
         },
         {
-            path: "/autenticacion",
-            // element: <AutenticacionPage />
-        },
-        {
-            path: "/menu",
-            element: <MenuPage/>
+            path: "/peliculasReserva/:id",
+            element: <PeliculasReserva />
         }
+        //{
+           // path: "/register",
+           // element: <Register />
+        //},
+        //{
+           // path: "/recover",
+           // element: <Recover/>
+        //}
     ])
 }
 export default Rutas

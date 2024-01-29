@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button, TextField, Typography, Box, Icon, Paper, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 
-const ContentMenuReserva = () => {
+const ContentPeliculasReserva = () => {
     const [formData, setFormData] = useState({
         nombre: '',
         apellido: '',
@@ -283,4 +283,4 @@ const ContentMenuReserva = () => {
     );
 };
 
-export default ContentMenuReserva;
+export default ContentPeliculasReserva;

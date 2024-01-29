@@ -1,18 +1,18 @@
 import Header from '../components/Header.jsx';
-import ContentMenuReserva from './components/ContentSalaIndex.jsx';
-import {Box , Stack} from "@mui/material";
+import ContentPeliculasReserva from '../components/ContentPeliculasReserva.jsx';
+import { Container,Stack } from "@mui/material";
 
-function MenuReservaPage() {
+function PeliculasReservaPage() {
     return (
 
-      <Box>
+      <Container className='container'>
         <Header/>
         <Stack direction="row" spacing={2} justifyContent="space-between">
-          <ContentMenuReserva/>
+          <ContentPeliculasReserva/>
         </Stack>
-      </Box>
+      </Container>
     
     );
   }
 
-export default MenuReservaPage;
+export default PeliculasReservaPage;

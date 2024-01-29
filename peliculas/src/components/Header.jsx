@@ -18,6 +18,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import StarIcon from '@mui/icons-material/Star';
 import TextField from '@mui/material/TextField';
+import { Link } from "react-router-dom"
 
 const drawerWidth = 240;
 
@@ -156,8 +157,8 @@ export default function Header() {
         <List>
 
 
-          {['Peliculas', 'Salas'].map((text, index) => (
-            <ListItem key={text} disablemx sx={{ display: 'block' }}>
+          <Link to={"/"} >
+            <ListItem key={'Peliculas'} disablemx sx={{ display: 'block' }}>
               <ListItemButton
                 sx={{
                   minHeight: 48,
@@ -174,10 +175,36 @@ export default function Header() {
                 >
                   <StarIcon color="grey" />
                 </ListItemIcon>
-                <ListItemText primary={text} sx={{ opacity: open ? 1 : 0 }} />
+                <ListItemText primary={'Peliculas'} sx={{ opacity: open ? 1 : 0, color: 'grey', textDecoration: 'none' }} />
               </ListItemButton>
             </ListItem>
-          ))}
+          </Link>
+
+
+          <Link to={"salaIndex"} >
+            <ListItem key={'Salas'} disablemx sx={{ display: 'block' }}>
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <StarIcon color="grey" />
+                </ListItemIcon>
+                <ListItemText primary={'Salas'} sx={{ opacity: open ? 1 : 0, color: 'grey', textDecoration: 'none' }} />
+              </ListItemButton>
+            </ListItem>
+          </Link>
+
+
         </List>
 
 

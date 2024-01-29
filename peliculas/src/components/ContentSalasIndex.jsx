@@ -2,9 +2,10 @@ import React from "react";
 import { Box, Grid, Card, CardContent, CardMedia } from '@mui/material';
 import Typography from '@mui/material/Typography';
 import Chip from '@mui/material/Chip';
+import { Link } from "react-router-dom"
 
 
-const ContentMenuSalas = () => {
+const ContentSalasIndex = () => {
     return (
         <Box flex={7} sx={{ p: 3 }} >
 
@@ -18,7 +19,9 @@ const ContentMenuSalas = () => {
                 <Grid container spacing={2} > 
 
                     <Grid item md={6} >
+                        
                         <Card >
+                        <Link to={'/salaIndex/:id'}>
                             <CardMedia
                                 component="img"
                                 image="https://static.wikia.nocookie.net/doblaje/images/9/93/Alice_la_gemela_del_diablo_portada.jpg"
@@ -38,6 +41,7 @@ const ContentMenuSalas = () => {
                                     <Chip label="16:00" variant="filled" color="default" style={{ padding: "4px", borderRadius: "100px" }} />
                                 </Box>
                             </CardContent>
+                            </Link>
                         </Card>
                     </Grid>
 
@@ -156,4 +160,4 @@ const ContentMenuSalas = () => {
     )
 }
 
-export default ContentMenuSalas
+export default ContentSalasIndex

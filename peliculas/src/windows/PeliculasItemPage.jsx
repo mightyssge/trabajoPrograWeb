@@ -1,24 +1,22 @@
-import Header from './components/Header.jsx';
-import Sidebar from './components/Sidebar.jsx';
-import ContentMenuPelis from './components/ContentMenuPelis.jsx';
-import {Box , Stack} from "@mui/material";
-import ContPeliculasItem from './components/ContentPeliculasItem.jsx'
+import Header from '../components/Header.jsx';
+import { Container,Stack } from "@mui/material";
+import ContentPeliculasItem from '../components/ContentPeliculasItem.jsx'
 
 
-function MenuPelisPage() {
+function PeliculasItemPage() {
     return (
 
       //esto es el contenido de los menus
-      <Box>
+      <Container className='container'>
         <Header/>
         <Stack direction="row" spacing={2} justifyContent="space-between">
         
-          <ContPeliculasItem/>
+          <ContentPeliculasItem/>
          
         </Stack>
-      </Box>
+      </Container>
     
     );
   }
 
-export default MenuPelisPage;
+export default PeliculasItemPage;
