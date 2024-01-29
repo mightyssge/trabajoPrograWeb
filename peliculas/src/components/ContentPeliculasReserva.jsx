@@ -24,7 +24,7 @@ const ContentPeliculasReserva = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
 
-      
+
         if (Object.values(formData).some((value) => value.trim() === '')) {
             setError('Por favor, complete todos los campos.');
         } else {
@@ -35,7 +35,7 @@ const ContentPeliculasReserva = () => {
 
     const handleCloseConfirmation = () => {
         setShowConfirmation(false);
-        setError(''); 
+        setError('');
     };
 
     return (
@@ -188,7 +188,6 @@ const ContentPeliculasReserva = () => {
                                             color="secondary"
                                             fullWidth
                                             style={{ backgroundColor: 'rgb(250, 117, 37)', color: 'white', padding: '15px', fontWeight: 'bold' }}
-                                            disabled={Object.values(formData).some((value) => value.trim() === '')}
                                         >
                                             Reservar
                                         </Button>
@@ -210,9 +209,9 @@ const ContentPeliculasReserva = () => {
                             marginLeft: '-10px'
                         }}>
                             <Paper sx={{
-                                borderRadius: '0', 
-                                padding: '20px', 
-                                boxShadow: 'none', 
+                                borderRadius: '0',
+                                padding: '20px',
+                                boxShadow: 'none',
                             }}>
                                 <img
                                     src="https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001896?referenceScheme=HeadOffice&allowPlaceHolder=true"
