@@ -43,7 +43,7 @@ const ContentPeliculasItem = () => {
 
 
       <Grid  display="flex" item>
-  <Card sx={{  }}>
+  <Card >
     <Grid item md={4} sx={{ height: "100%", width: "100%" }}>
       <img
         src="https://i.ytimg.com/vi/J2pWkhP3ou0/maxresdefault.jpg"
