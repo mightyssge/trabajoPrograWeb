@@ -7,7 +7,7 @@ const ContentPeliculasReserva = () => {
         nombre: '',
         apellido: '',
         codigo: '',
-        cantidad: '',
+        cantidad: 0,
     });
 
     const [showConfirmation, setShowConfirmation] = useState(false);
@@ -15,23 +15,37 @@ const ContentPeliculasReserva = () => {
 
     const handleChange = (event) => {
         const { name, value } = event.target;
+        let parsedValue;
+    
+        if (name === 'cantidad') {
+            parsedValue = parseInt(value, 10);
+        } else if (name === 'codigo') {
+            parsedValue = value.replace(/[^a-zA-Z]/g, '');
+        } else {
+            parsedValue = value;
+        }
+    
         setFormData((prevData) => ({
             ...prevData,
-            [name]: value,
+            [name]: parsedValue,
         }));
     };
+    
+
 
     const handleSubmit = (event) => {
         event.preventDefault();
-
-
-        if (Object.values(formData).some((value) => value.trim() === '')) {
-            setError('Por favor, complete todos los campos.');
+    
+        const { nombre, apellido, codigo, cantidad } = formData;
+    
+        if (nombre.trim() === '' || apellido.trim() === '' || codigo.trim() === '' || isNaN(cantidad) || cantidad <= 0) {
+            setError('Por favor, complete todos los campos correctamente.');
         } else {
             console.log('Datos de reserva:', formData);
             setShowConfirmation(true);
         }
     };
+    
 
     const handleCloseConfirmation = () => {
         setShowConfirmation(false);
@@ -173,6 +187,7 @@ const ContentPeliculasReserva = () => {
                                             fullWidth
                                             margin="normal"
                                             name="cantidad"
+                                            type="number"
                                             value={formData.cantidad}
                                             onChange={handleChange}
                                             style={{ marginBottom: '20px' }}
@@ -181,6 +196,7 @@ const ContentPeliculasReserva = () => {
                                                 style: { color: 'black' },
                                             }}
                                         />
+
 
                                         <Button
                                             type="submit"
