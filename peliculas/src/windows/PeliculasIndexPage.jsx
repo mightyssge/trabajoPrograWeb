@@ -1,4 +1,4 @@
-import Header from '../components/Header.jsx';
+import Header from '../components/Cabecera.jsx';
 import ContentPeliculasIndex from '../components/ContentPeliculasIndex.jsx';
 import { Container,Stack } from "@mui/material";
 

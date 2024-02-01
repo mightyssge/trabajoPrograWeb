@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, TextField, Typography, Box, Icon, Paper, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { Link } from "react-router-dom"
 
 const ContentPeliculasReserva = () => {
     const [formData, setFormData] = useState({
