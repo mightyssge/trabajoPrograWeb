@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { Button, TextField, Typography, Box, Icon, Paper, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { Link } from "react-router-dom"
 
 const ContentPeliculasReserva = () => {
     const [formData, setFormData] = useState({
         nombre: '',
         apellido: '',
         codigo: '',
-        cantidad: 0,
+        cantidad: '',
     });
 
     const [showConfirmation, setShowConfirmation] = useState(false);
@@ -15,41 +16,27 @@ const ContentPeliculasReserva = () => {
 
     const handleChange = (event) => {
         const { name, value } = event.target;
-        let parsedValue;
-    
-        if (name === 'cantidad') {
-            parsedValue = parseInt(value, 10);
-        } else if (name === 'codigo') {
-            parsedValue = value.replace(/[^a-zA-Z]/g, '');
-        } else {
-            parsedValue = value;
-        }
-    
         setFormData((prevData) => ({
             ...prevData,
-            [name]: parsedValue,
+            [name]: value,
         }));
     };
-    
-
 
     const handleSubmit = (event) => {
         event.preventDefault();
-    
-        const { nombre, apellido, codigo, cantidad } = formData;
-    
-        if (nombre.trim() === '' || apellido.trim() === '' || codigo.trim() === '' || isNaN(cantidad) || cantidad <= 0) {
-            setError('Por favor, complete todos los campos correctamente.');
+
+      
+        if (Object.values(formData).some((value) => value.trim() === '')) {
+            setError('Por favor, complete todos los campos.');
         } else {
             console.log('Datos de reserva:', formData);
             setShowConfirmation(true);
         }
     };
-    
 
     const handleCloseConfirmation = () => {
         setShowConfirmation(false);
-        setError('');
+        setError(''); 
     };
 
     return (
@@ -187,7 +174,6 @@ const ContentPeliculasReserva = () => {
                                             fullWidth
                                             margin="normal"
                                             name="cantidad"
-                                            type="number"
                                             value={formData.cantidad}
                                             onChange={handleChange}
                                             style={{ marginBottom: '20px' }}
@@ -197,13 +183,13 @@ const ContentPeliculasReserva = () => {
                                             }}
                                         />
 
-
                                         <Button
                                             type="submit"
                                             variant="contained"
                                             color="secondary"
                                             fullWidth
                                             style={{ backgroundColor: 'rgb(250, 117, 37)', color: 'white', padding: '15px', fontWeight: 'bold' }}
+                                            disabled={Object.values(formData).some((value) => value.trim() === '')}
                                         >
                                             Reservar
                                         </Button>
@@ -225,9 +211,9 @@ const ContentPeliculasReserva = () => {
                             marginLeft: '-10px'
                         }}>
                             <Paper sx={{
-                                borderRadius: '0',
-                                padding: '20px',
-                                boxShadow: 'none',
+                                borderRadius: '0', 
+                                padding: '20px', 
+                                boxShadow: 'none', 
                             }}>
                                 <img
                                     src="https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001896?referenceScheme=HeadOffice&allowPlaceHolder=true"
