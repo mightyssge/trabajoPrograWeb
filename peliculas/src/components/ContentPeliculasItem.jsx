@@ -40,7 +40,6 @@ const ContentPeliculasItem = () => {
     </Box>
 
 
-
   );
 };
 
