@@ -18,8 +18,22 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
+import {  useNavigate } from 'react-router-dom'
 
-function sidebar() {
+function Sidebar() {
+
+    const navigate= useNavigate()
+
+    const peliculasOnClick = () => {
+        navigate( "/peliculas")
+    }
+
+    const salasOnClick = () => {
+        navigate( "/salas")
+    }
+
+
+
     return (
         <><img src={"https://www.qschina.cn/sites/default/files/profiles/logos/universidad-de-lima_592560cf2aeae70239af5157_large.jpg"} alt="Logo Ulima" style={{ width: 128, height: 127, marginLeft: 51, marginRight: 51, marginTop: 24 }} /><TextField
             label="Busca"
@@ -28,8 +42,8 @@ function sidebar() {
             sx={{ mx: 2 }} /><List>
 
 
-                <Link to={"/"}>
-                    <ListItem key={'Peliculas'} disablemx sx={{ display: 'block' }}>
+                
+                    <ListItem key={'Peliculas'} disablemx sx={{ display: 'block' }} onClick={peliculasOnClick}>
                         <ListItemButton
                             sx={{
                                 minHeight: 48,
@@ -49,11 +63,11 @@ function sidebar() {
                             <ListItemText primary={'Peliculas'} sx={{ opacity:  1 , color: 'grey', textDecoration: 'none' }} />
                         </ListItemButton>
                     </ListItem>
-                </Link>
+                
 
 
-                <Link to={"salaIndex"}>
-                    <ListItem key={'Salas'} disablemx sx={{ display: 'block' }}>
+                
+                    <ListItem key={'Salas'} disablemx sx={{ display: 'block' }} onClick={salasOnClick}>
                         <ListItemButton
                             sx={{
                                 minHeight: 48,
@@ -73,7 +87,7 @@ function sidebar() {
                             <ListItemText primary={'Salas'} sx={{ opacity:   1 , color: 'grey', textDecoration: 'none' }} />
                         </ListItemButton>
                     </ListItem>
-                </Link>
+                
 
 
             </List></>
@@ -82,4 +96,4 @@ function sidebar() {
     )
 }
 
-export default sidebar
+export default Sidebar

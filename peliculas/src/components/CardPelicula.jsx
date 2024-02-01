@@ -7,10 +7,10 @@ import {  useNavigate } from 'react-router-dom'
 function CardPelicula(props) {
 
     const navigate= useNavigate()
-    const cardOnClick = () => {
-        navigate(props.path, {state: {pelicula: props.pelicula}})
-    }
 
+    const cardOnClick = () => {
+        navigate( props.path ,{state: {movie: props.movie}})
+    }
 
     return (
         <Grid item md={4}>

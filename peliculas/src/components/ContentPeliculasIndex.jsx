@@ -36,7 +36,7 @@ const ContentPeliculasIndex = () => {
                         moviesData.map((e) => {
                             return (
                                 <CardPelicula 
-                                    pelicula={e}
+                                    movie={e}
                                     id={e.id}
                                     title={e.title}
                                     year={e.year}
