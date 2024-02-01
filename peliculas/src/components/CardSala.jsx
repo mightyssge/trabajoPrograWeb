@@ -16,7 +16,7 @@ function CardSala(props) {
     const navigate = useNavigate()
 
     const cardOnClick = () => {
-        navigate(props.path, { state: { movie: props.movie } })
+        navigate(props.path, { state: { sala: props.sala } })
     }
 
     return (
