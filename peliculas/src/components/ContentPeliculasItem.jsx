@@ -1,14 +1,12 @@
-import React, { useState } from 'react';
+
 import { Container, Box, Button, TextField, Divider, Stack, Grid, Card, Paper, Avatar, CardHeader } from '@mui/material';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
-import Chip from '@mui/material/Chip';
 import Typography from '@mui/material/Typography';
-import { Link } from "react-router-dom"
-import { blue, red } from '@mui/material/colors';
 import '@fontsource/roboto'; 
 import DetallePelis from './DetallePelis';
 import DetalleSalasDispo from './DetalleSalasDispo';
 import DataPelis from './peliculas_limpio.json';
+import { useParams } from 'react-router-dom'
+import React, { useState, useEffect } from 'react';
 
 
 
@@ -16,7 +14,8 @@ import DataPelis from './peliculas_limpio.json';
 
 
 const ContentPeliculasItem = () => {
- 
+  const [randomId, setRandomId] = useState(Math.floor(Math.random() * 20) + 1);
+
   return (
 
     <Box flex={2} sx={{ p: 4 }} >
@@ -24,7 +23,7 @@ const ContentPeliculasItem = () => {
         Películas
       </Typography>
 
-      <DetallePelis DataPelis={DataPelis} />
+      <DetallePelis DataPelis={DataPelis} randomId={randomId} />
 
       
         

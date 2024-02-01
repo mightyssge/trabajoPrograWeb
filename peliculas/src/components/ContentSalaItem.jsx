@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Box, Button, TextField, Divider, Stack, Grid, Card, Paper, Avatar, CardHeader } from '@mui/material';
+import { Container, Box, Button, TextField, Divider, Stack, Grid, Card, Paper, Avatar, CardHeader} from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Chip from '@mui/material/Chip';
 import Typography from '@mui/material/Typography';
@@ -9,6 +9,7 @@ import { blue, red } from '@mui/material/colors';
 
 
 const ContentSalaItem = () => {
+
 
   return (
 
@@ -68,18 +69,7 @@ const ContentSalaItem = () => {
         </Grid>
         </Grid>
         
-
-
-
-
-
-
-
-
-
-
-
-        <Grid style={{ paddingTop: "2%", width: "100%" }}item  md={4} >
+       <Grid style={{ paddingTop: "2%", width: "100%" }}item  md={4} >
           <Typography variant="h2" style={{ fontSize: "45px", fontFamily: "Roboto" }}>
             Peliculas disponibles
           </Typography>

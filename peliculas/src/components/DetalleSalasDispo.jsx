@@ -10,7 +10,7 @@ const DetalleSalasDispo=()=>{
     return ( 
 
        
-        <Box sx={{ mt: 10, width: "55%", height: "100%" }} >
+        <Box sx={{ mt: 10, width: "55%" }} >
             
           <Grid  style={{ }}item  md={4}>
             <Grid item  md={4}> 
