@@ -4,7 +4,6 @@ import Box from '@mui/material/Box';
 import MuiDrawer from '@mui/material/Drawer';
 import MuiAppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import List from '@mui/material/List';
 import CssBaseline from '@mui/material/CssBaseline';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
@@ -12,13 +11,8 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
 import StarIcon from '@mui/icons-material/Star';
-import TextField from '@mui/material/TextField';
-import { Link } from "react-router-dom"
+import Sidebar from './Sidebar';
 
 const drawerWidth = 240;
 
@@ -106,7 +100,7 @@ const Header = () => {
 
       <AppBar position="fixed" sx={{ background: "rgb(250, 117, 37)" }}>
         <Toolbar>
-
+          
           <IconButton
             size="large"
             edge="start"
@@ -139,10 +133,11 @@ const Header = () => {
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
           </IconButton>
+          
         </DrawerHeader>
 
         <Divider />
-
+        <Sidebar />
 
 
 
@@ -156,5 +151,5 @@ const Header = () => {
     </Box >
     )}
   
-export default  Header() ;
+export default  Header ;
   

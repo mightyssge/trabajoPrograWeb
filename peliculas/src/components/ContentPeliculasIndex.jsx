@@ -23,13 +23,13 @@ const ContentPeliculasIndex = () => {
     return (
         <Box flex={7} sx={{ p: 3 }} >
 
-            <Typography variant="h4" component="div" style={{ paddingTop: '16px', paddingBottom: '16px', borderBottom: '1px solid rgb(224, 224, 224)' }} bgcolor="skyblue">
+            <Typography variant="h4" component="div" style={{ paddingTop: '16px', paddingBottom: '16px', borderBottom: '1px solid rgb(224, 224, 224)' }} >
                 Películas
             </Typography>
 
 
             <Box
-                sx={{ mt: 3, padding: '19px 24px 0 24px' }} bgcolor="pink">
+                sx={{ mt: 3, padding: '19px 24px 0 24px' }} >
 
                 <Grid container spacing={2} >{/* bloque 1 */}
                     {
