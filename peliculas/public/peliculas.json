@@ -22,8 +22,18 @@
         "thumbnail_height": 326.0,
         "path": "the-grudge",
         "salas": [
-            "Skytower Plaza",
-            "Tech Hub Center"
+            {
+                "sala": "CP Alcazar",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "sala": "CP Arequipa",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "sala": "CP Cajamarca",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
         ]
     },
     {
@@ -50,9 +60,18 @@
         "thumbnail_height": 398.0,
         "path": "underwater",
         "salas": [
-            "Green Gardens Tower",
-            "Harbor View Complex",
-            "Urban Heights Tower"
+            {
+                "sala": "CP Arequipa Paseo Central",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "sala": "CP Cajamarca",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "sala": "CP Caminos del Inca",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
         ]
     },
     {
@@ -76,8 +95,18 @@
         "thumbnail_height": 383.0,
         "path": "like-a-boss",
         "salas": [
-            "Downtown Plaza",
-            "Tech Hub Center"
+            {
+                "sala": "CP Arequipa Paseo Central",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "sala": "CP Centro Civico",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            },
+            {
+                "sala": "CP Canto Grande",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
         ]
     },
     {
@@ -100,8 +129,18 @@
         "thumbnail_height": 383.0,
         "path": "three-christs",
         "salas": [
-            "Skytower Plaza",
-            "Tech Hub Center"
+            {
+                "sala": "CP Arequipa Real Plaza",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "sala": "CP Caminos del Inca",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "sala": "CP Centro Civico",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
         ]
     },
     {
@@ -126,8 +165,18 @@
         "thumbnail_height": 350.0,
         "path": "inherit-the-viper",
         "salas": [
-            "Skytower Plaza",
-            "Tech Hub Center"
+            {
+                "sala": "CP Cajamarca",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "sala": "CP Caminos del Inca",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            },
+            {
+                "sala": "CP Canto Grande",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
         ]
     },
     {
@@ -151,9 +200,18 @@
         "thumbnail_height": 350.0,
         "path": "the-sonata",
         "salas": [
-            "Skytower Plaza",
-            "Downtown Plaza",
-            "Tech Hub Center"
+            {
+                "sala": "CP Centro Civico",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "sala": "CP Canto Grande",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            },
+            {
+                "sala": "CP Centro",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
         ]
     },
     {
@@ -176,8 +234,18 @@
         "thumbnail_height": 380.0,
         "path": "the-murder-of-nicole-brown-simpson",
         "salas": [
-            "Skytower Plaza",
-            "Tech Hub Center"
+            {
+                "sala": "CP Cajamarca",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "sala": "CP Caminos del Inca",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "sala": "CP Canto Grande",
+                "horarios": ["18:00-20:00", "20:30-22:30, 15:00-17:00"]
+            }
         ]
     },
     {
@@ -206,9 +274,18 @@
         "thumbnail_height": 325.0,
         "path": "bad-boys-for-life",
         "salas": [
-            "Green Gardens Tower",
-            "Skytower Plaza",
-            "Urban Heights Tower"
+            {
+                "sala": "CP Centro Civico",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "sala": "CP Canto Grande",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "sala": "CP Centro",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            }
         ]
     },
     {
@@ -241,8 +318,18 @@
         "thumbnail_height": 326.0,
         "path": "dolittle",
         "salas": [
-            "Urban Heights Tower",
-            "Tech Hub Center"
+            {
+                "sala": "CP Arequipa Paseo Central",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "sala": "CP Cajamarca",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "sala": "CP Caminos del Inca",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            }
         ]
     },
     {
@@ -267,9 +354,18 @@
         "thumbnail_height": 383.0,
         "path": "a-fall-from-grace",
         "salas": [
-            "Skytower Plaza",
-            "Tech Hub Center",
-            "Urban Heights Tower"
+            {
+                "sala": "CP Cajamarca",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "sala": "CP Caminos del Inca",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "sala": "CP Canto Grande",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
         ]
     }
 ]

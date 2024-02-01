@@ -14,7 +14,21 @@
             "REGULAR",
             "3D"
         ],
-        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/b70aa8b9-f9f9-49c5-8f7e-28e6afd5646f"
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/b70aa8b9-f9f9-49c5-8f7e-28e6afd5646f",
+        "peliculas": [
+            {
+                "pelicula": "The Grudge",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "pelicula": "Underwater",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "pelicula": "Like a Boss",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
     },
     {
         "ID": 37,
@@ -31,7 +45,21 @@
             "3D",
             "REGULAR"
         ],
-        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/f0c0deba-02e8-4e07-9d70-ab29336bc551"
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/f0c0deba-02e8-4e07-9d70-ab29336bc551",
+        "peliculas": [
+            {
+                "pelicula": "Underwater",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "pelicula": "Like a Boss",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "pelicula": "The Sonata",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            }
+        ]
     },
     {
         "ID": 51,
@@ -47,7 +75,21 @@
             "2D",
             "REGULAR"
         ],
-        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/b06aa9ea-73e2-4f7b-9608-f99536d6cf3b"
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/b06aa9ea-73e2-4f7b-9608-f99536d6cf3b",
+        "peliculas": [
+            {
+                "pelicula": "Like a Boss",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "pelicula": "The Murder of Nicole Brown Simpson",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            },
+            {
+                "pelicula": "Bad Boys for Life",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
     },
     {
         "ID": 38,
@@ -64,7 +106,21 @@
             "REGULAR",
             "3D"
         ],
-        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/d777a757-28b0-4ba2-870b-f807c3e72950"
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/d777a757-28b0-4ba2-870b-f807c3e72950",
+        "peliculas": [
+            {
+                "pelicula": "Three Christs",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "pelicula": "The Sonata",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "pelicula": "The Murder of Nicole Brown Simpson",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
     },
     {
         "ID": 4,
@@ -81,7 +137,21 @@
             "REGULAR",
             "3D"
         ],
-        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/bc5cbd20-d5f2-4e79-931f-d31911c26968"
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/bc5cbd20-d5f2-4e79-931f-d31911c26968",
+        "peliculas": [
+            {
+                "pelicula": "Inherit the Viper",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "pelicula": "The Sonata",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            },
+            {
+                "pelicula": "A Fall from Grace",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
     },
     {
         "ID": 39,
@@ -98,7 +168,21 @@
             "REGULAR",
             "3D"
         ],
-        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/35bd2686-f0f3-42aa-881c-627cb5f59e43"
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/35bd2686-f0f3-42aa-881c-627cb5f59e43",
+        "peliculas": [
+            {
+                "pelicula": "Bad Boys for Life",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "pelicula": "Dolittle",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            },
+            {
+                "pelicula": "A Fall from Grace",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
     },
     {
         "ID": 50,
@@ -114,7 +198,21 @@
             "2D",
             "REGULAR"
         ],
-        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/3c788c2c-2fdf-452c-867a-69da795373cd"
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/3c788c2c-2fdf-452c-867a-69da795373cd",
+        "peliculas": [
+            {
+                "pelicula": "Underwater",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "pelicula": "The Murder of Nicole Brown Simpson",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "pelicula": "Dolittle",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            }
+        ]
     },
     {
         "ID": 54,
@@ -130,7 +228,21 @@
             "2D",
             "REGULAR"
         ],
-        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/778b2dad-e44a-41af-8f11-694bf4b4f40b"
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/778b2dad-e44a-41af-8f11-694bf4b4f40b",
+        "peliculas": [
+            {
+                "pelicula": "Inherit the Viper",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            },
+            {
+                "pelicula": "A Fall from Grace",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "pelicula": "Bad Boys for Life",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            }
+        ]
     },
     {
         "ID": 6,
@@ -147,7 +259,21 @@
             "REGULAR",
             "3D"
         ],
-        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/a98e74ee-4e80-40f7-9c5f-4bdde69f948d"
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/a98e74ee-4e80-40f7-9c5f-4bdde69f948d",
+        "peliculas": [
+            {
+                "pelicula": "The Murder of Nicole Brown Simpson",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "pelicula": "Bad Boys for Life",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            },
+            {
+                "pelicula": "Dolittle",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
     },
     {
         "ID": 7,
@@ -164,7 +290,21 @@
             "REGULAR",
             "3D"
         ],
-        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/ef527115-a564-4d62-acc9-e7579913705c"
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/ef527115-a564-4d62-acc9-e7579913705c",
+        "peliculas": [
+            {
+                "pelicula": "Three Christs",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "pelicula": "The Sonata",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            },
+            {
+                "pelicula": "Inherit the Viper",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
     },
     {
         "ID": 8,
@@ -181,6 +321,20 @@
             "REGULAR",
             "3D"
         ],
-        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/c6fa7835-f590-4290-8b1e-68338f63841c"
+        "img": "https://cdn.cineplanet.com.pe/contentAsset/raw-data/c6fa7835-f590-4290-8b1e-68338f63841c",
+        "peliculas": [
+            {
+                "pelicula": "Dolittle",
+                "horarios": ["14:00-16:00", "17:30-19:30", "20:00-22:00"]
+            },
+            {
+                "pelicula": "A Fall from Grace",
+                "horarios": ["16:00-18:00", "19:30-21:30", "22:00-00:00"]
+            },
+            {
+                "pelicula": "Underwater",
+                "horarios": ["18:00-20:00", "20:30-22:30", "15:00-17:00"]
+            }
+        ]
     }
 ]
