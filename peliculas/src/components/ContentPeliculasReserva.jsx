@@ -1,9 +1,31 @@
-import React, { useState } from 'react';
+
 import { Button, TextField, Typography, Box, Icon, Paper, Dialog, DialogTitle, DialogContent, DialogActions } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { Link } from "react-router-dom"
+import CardReserva from './CardReserva';
+import CardImageReserva from './CardImageReserva';
+import CardFormularioAdentro from './CardFormularioAdentro';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const ContentPeliculasReserva = () => {
+
+    const location = useLocation();
+    const { peliculaActual } = location.state || {};
+    useEffect(() => {
+        if (peliculaActual) {
+          // Utiliza console.log para imprimir la información en la consola
+          console.log('Información de la película en Reserva:', peliculaActual);
+        }
+      }, [peliculaActual]);
+
+
+
+
+    
+
+
+
     const [formData, setFormData] = useState({
         nombre: '',
         apellido: '',
@@ -73,44 +95,12 @@ const ContentPeliculasReserva = () => {
                     height: 'auto',
                     padding: '0px 24px 0px 24px'
                 }}>
-                    <Box sx={{
-                        width: 'auto',
-                        height: 'auto',
-                        marginTop: '10px'
-                    }}>
-                        <Typography variant="h4" component="div" sx={{
-                            width: 'auto',
-                            height: 'auto',
+        
+                    <CardReserva/>
 
-                        }}>
-                            Beekeper Sentencia de Muerte
-                        </Typography>
-                        <Box sx={{
-                            display: 'flex',
-                            gap: 2,
-                            alignItems: 'center',
-                            paddingTop: '10px',
-                            paddingBottom: '20px ',
-                            height: 'auto',
-                        }}>
-                            <Icon sx={{
-                                color: '#0000008F'
-                            }} aria-label="Location">
-                                <LocationOnIcon />
-                            </Icon>
-                            <Typography color="#2196F3" variant="subtitle1" component="div" sx={{ marginLeft: '5px' }}>
-                                1hrs 50min
-                            </Typography>
-                            <Icon sx={{
-                                color: '#0000008F'
-                            }} aria-label="Location">
-                                <LocationOnIcon />
-                            </Icon>
-                            <Typography color="#2196F3" variant="subtitle1" component="div" sx={{ marginLeft: '5px' }}>
-                                Sala A
-                            </Typography>
-                        </Box>
-                    </Box>
+
+                
+                  
                     <Box sx={{
                         width: 'auto',
                         height: 'auto',
@@ -126,12 +116,7 @@ const ContentPeliculasReserva = () => {
                         }}>
                             <Box style={{ paddingTop: '20px', paddingRight: '0px', paddingLeft: '0px', paddingBottom: '20px', marginLeft: '-45px' }}>
                                 <Paper elevation={3} style={{ padding: '20px', boxShadow: '5px 5px 15px 0px rgba(0,0,0,0.1)' }}>
-                                    <Typography variant="h5" component="div" gutterBottom>
-                                        Información de reserva
-                                    </Typography>
-                                    <Typography variant="h6" component="div" gutterBottom style={{ borderBottom: '1px solid rgb(224, 224, 224)' }}>
-                                        Lunes 08 - 15:00 hrs
-                                    </Typography>
+                                   <CardFormularioAdentro />
                                     <form onSubmit={handleSubmit}>
                                         <TextField
                                             label="Nombre"
@@ -203,25 +188,8 @@ const ContentPeliculasReserva = () => {
                                 </Paper>
                             </Box>
                         </Box>
-                        <Box sx={{
-                            width: 'auto',
-                            height: 'auto',
-                            borderRadius: '4px',
-                            padding: '0px',
-                            marginLeft: '-10px'
-                        }}>
-                            <Paper sx={{
-                                borderRadius: '0', 
-                                padding: '20px', 
-                                boxShadow: 'none', 
-                            }}>
-                                <img
-                                    src="https://cdn.apis.cineplanet.com.pe/CDN/media/entity/get/FilmPosterGraphic/HO00001896?referenceScheme=HeadOffice&allowPlaceHolder=true"
-                                    alt="Imagen"
-                                    style={{ maxWidth: '100%', height: 'auto' }}
-                                />
-                            </Paper>
-                        </Box>
+
+                       <CardImageReserva/>
 
                     </Box>
                 </Box>

@@ -8,6 +8,7 @@ import SalaItemPage from "./windows/SalaItemPage.jsx";
 
 
 
+
 const App = () => {
   return (
 
@@ -17,7 +18,9 @@ const App = () => {
         <Route path="/reserva" element={<PeliculasReservaPage />} />
         <Route path="/peliculas/:path" element={<PeliculasItemPage />} />
         <Route path="/salas" element={<SalaIndexPage />} />
-        <Route path="/salas/:path" element={<SalaItemPage />} />
+        <Route path="/salas/:path" element={<SalaItemPage />} /> 
+       
+
       </Routes>
 
   );
