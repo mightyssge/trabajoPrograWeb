@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Box, Button, TextField, Divider, Stack, Grid, Card, Paper, Avatar, CardHeader } from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import Chip from '@mui/material/Chip';
@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import { Link, useLocation } from "react-router-dom"
 import { blue, red } from '@mui/material/colors';
 import CardMedia from '@mui/material/CardMedia';
+import PeliculasDisponibles from './PeliculasDisponibles';
 
 
 
@@ -15,7 +16,24 @@ const ContentSalaItem = () => {
   const location = useLocation();
   const currentSala = location.state?.sala
 
-  if (!currentSala) {
+
+  const [moviesData, setMoviesData] = useState([])
+  const obtenerPeliculas = async () => {
+    const response = await fetch("/peliculas.json")
+    const data = await response.json()
+    setMoviesData(data)
+  }
+  useEffect(() => {
+    obtenerPeliculas()
+  }, [])
+
+  // Utilizando map para extraer el valor de "pelicula" de cada objeto en la lista
+  const titulosFiltrados = currentSala.peliculas.map(pelicula => pelicula.pelicula);
+  const currentPeliculasforSala = moviesData.filter(pelicula => titulosFiltrados.includes(pelicula.title));
+  
+  console.log(currentPeliculasforSala)
+
+  if (currentPeliculasforSala == null) {
     // Manejar el caso donde currentSala es undefined, por ejemplo, redirigir a una página de error.
     return <p>La sala no existe o no se ha especificado.</p>;
   }
@@ -29,9 +47,9 @@ const ContentSalaItem = () => {
       <Box sx={{ padding: 5, mt: 5 }}>
         <Grid item md={4} sx={{ mb: 1 }} >
           <Typography variant="h4" sx={{ fontSize: "40px", fontFamily: "Roboto" }}  >{currentSala.name}</Typography>
-          <Grid sx={{ display: "flex", my:3 }}>
-            <LocationOnIcon color="action" sx={{ marginRight: "15px"  }} ></LocationOnIcon>
-            <Typography variant="subtitle2" color="#2196F3" fontWeight="600" sx={{  }}>
+          <Grid sx={{ display: "flex", my: 3 }}>
+            <LocationOnIcon color="action" sx={{ marginRight: "15px" }} ></LocationOnIcon>
+            <Typography variant="subtitle2" color="#2196F3" fontWeight="600" sx={{}}>
               {currentSala.city} - {currentSala.address}
             </Typography>
           </Grid>
@@ -53,14 +71,14 @@ const ContentSalaItem = () => {
               </header>
               <Typography variant='body1' style={{ marginLeft: "4%", fontSize: "16px", fontFamily: "Roboto", paddingLeft: "4%" }} >
                 Nro Telefono: <br />{currentSala.phoneNumber} <br />
-                <br />Tipos de salas disponibles: 
+                <br />Tipos de salas disponibles:
                 <Box sx={{ mt: '16px', display: 'flex', gap: '8px' }} spacing={8}>
-                {
-                  currentSala.formats.map((label) => {
-                    return <><Chip label={label} variant="filled" color="default" style={{ padding: "4px", borderRadius: "100px" }} /></>
-                  }
-                  )
-                }</Box>
+                  {
+                    currentSala.formats.map((label) => {
+                      return <><Chip label={label} variant="filled" color="default" style={{ padding: "4px", borderRadius: "100px" }} /></>
+                    }
+                    )
+                  }</Box>
               </Typography>
             </Card>
           </Grid>
@@ -77,67 +95,18 @@ const ContentSalaItem = () => {
 
         <Box sx={{ mt: 5, width: "70%", height: "140%" }} >
           {/*Inicio */}
-
-          <Grid item md={4}>
-            <Container style={{ width: "100%", height: "100%" }}>
-              <Container style={{ display: "flex", marginBottom: "4%" }}>
-                <Avatar variant='rounded' >
-                  BS
-                </Avatar>
-                <Typography variant='h6' style={{ marginLeft: "2%", marginTop: "5px", fontFamily: "Roboto" }}>
-                  <b>Beekeeper Sentencia de Muerte</b>
-                </Typography>
-              </Container>
-              <Typography variant='body1' style={{ marginLeft: "5%", fontFamily: "Roboto" }}>
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-              </Typography>
-            </Container>
-
-            <Grid sx={{ display: "flex", ml: 4, mb: 5 }}>
-              <Button
-                sx={{
-                  marginTop: '40px',
-                  width: '80px',
-                  height: '28px',
-                  border: '1px dashed #9747FF',
-                  borderRadius: '8px',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                  backgroundColor: 'rgba(151, 71, 255, 0.04)',
-                  marginLeft: '20px',
-                  padding: "4px, 24px, 4px, 24px"
-                }}
-              >
-                <Link to={'/peliculasReserva/:id'}><Typography variant="h5" style={{ fontSize: '12px', color: "rgba(151, 71, 255, 1)" }}>15:00</Typography></Link>
-              </Button>
-
-            </Grid>
-
-          </Grid>
-          {/*fIN */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+          {
+            currentSala.peliculas.map((funcion) => {
+              return (
+                <PeliculasDisponibles
+                  pelicula={funcion.pelicula}
+                  horarios={funcion.horarios}
+                  listafiltrada={currentPeliculasforSala}
+                />
+              )
+            })
+          }
+          
         </Box>
       </Box >
 
