@@ -20,7 +20,6 @@ const App = () => {
         <Route path="/salas" element={<SalaIndexPage />} />
         <Route path="/salas/:path" element={<SalaItemPage />} /> 
        
-
       </Routes>
 
   );

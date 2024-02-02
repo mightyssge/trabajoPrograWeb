@@ -21,11 +21,6 @@ const ContentPeliculasReserva = () => {
 
 
 
-
-    
-
-
-
     const [formData, setFormData] = useState({
         nombre: '',
         apellido: '',
@@ -96,7 +91,7 @@ const ContentPeliculasReserva = () => {
                     padding: '0px 24px 0px 24px'
                 }}>
         
-                    <CardReserva/>
+                    <CardReserva peliculaActual={peliculaActual}/>
 
 
                 
@@ -116,7 +111,7 @@ const ContentPeliculasReserva = () => {
                         }}>
                             <Box style={{ paddingTop: '20px', paddingRight: '0px', paddingLeft: '0px', paddingBottom: '20px', marginLeft: '-45px' }}>
                                 <Paper elevation={3} style={{ padding: '20px', boxShadow: '5px 5px 15px 0px rgba(0,0,0,0.1)' }}>
-                                   <CardFormularioAdentro />
+                                   <CardFormularioAdentro  peliculaActual={peliculaActual} />
                                     <form onSubmit={handleSubmit}>
                                         <TextField
                                             label="Nombre"
@@ -189,7 +184,7 @@ const ContentPeliculasReserva = () => {
                             </Box>
                         </Box>
 
-                       <CardImageReserva/>
+                       <CardImageReserva peliculaActual={peliculaActual}/>
 
                     </Box>
                 </Box>
