@@ -7,6 +7,15 @@
     function PeliculasDisponibles(props) {
         const peliActual = props.listafiltrada.find(pelicula => pelicula.title === props.pelicula)
         console.log(peliActual)
+        if (!peliActual) {
+            return (
+              <Grid item md={4}>
+                <Typography variant="body1" style={{ marginLeft: "5%", fontFamily: "Roboto" }}>
+                  Película no encontrada.
+                </Typography>
+              </Grid>
+            );
+          }
     return (
             <Grid item md={4}>
                 <Container style={{ width: "100%", height: "100%" }}>
