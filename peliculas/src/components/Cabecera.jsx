@@ -80,7 +80,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
     }),
   }),
 );
-const Header = () => {
+const Header = ({onTextfieldChange}) => {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
@@ -137,7 +137,7 @@ const Header = () => {
         </DrawerHeader>
 
         <Divider />
-        <Sidebar />
+        <Sidebar filter={onTextfieldChange} />
 
 
 

@@ -7,8 +7,10 @@ import { useState } from "react";
 import { useEffect } from "react";
 import CardPelicula from "./CardPelicula";
 
-const ContentPeliculasIndex = () => {
+const ContentPeliculasIndex = ({searchText}) => {
     const [moviesData, setMoviesData] = useState([])
+    const [filteredMovies, setFilteredMovies] = useState([])
+
     const obtenerPeliculas = async () => {
         const response = await fetch("/peliculas.json")
         const data = await response.json()
@@ -18,7 +20,10 @@ const ContentPeliculasIndex = () => {
         obtenerPeliculas()
     }, [])
 
-
+    useEffect(() => {
+        const filteredMovies = moviesData.filter((movie) => movie.title.toLowerCase().includes(searchText.toLowerCase()))
+        setFilteredMovies(filteredMovies)
+    }, [moviesData, searchText])
 
     return (
         <Box flex={7} sx={{ p: 3 }} >
@@ -33,7 +38,7 @@ const ContentPeliculasIndex = () => {
 
                 <Grid container spacing={2} >{/* bloque 1 */}
                     {
-                        moviesData.map((e) => {
+                        filteredMovies.map((e) => {
                             return (
                                 <CardPelicula 
                                     movie={e}
