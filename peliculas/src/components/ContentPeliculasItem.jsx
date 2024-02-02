@@ -6,8 +6,7 @@ import DetallePelis from './DetallePelis';
 import { useParams } from 'react-router-dom'
 import React, { useState, useEffect } from 'react';
 import { Grid } from '@mui/material';
-import _ from 'lodash';
-import uniqBy from 'lodash/uniqBy';
+
 
 
 const ContentPeliculasItem = () => {
@@ -41,14 +40,12 @@ const ContentPeliculasItem = () => {
           extract={peliculaEspecifica.extract}
           genres={peliculaEspecifica.genres}
           path={peliculaEspecifica.path}
+          salas={peliculaEspecifica.salas} 
+
         />
       )}
 
-      <Grid style={{ paddingTop: "2%", width: "100%" }} item md={4}>
-        <Typography variant="h2" style={{ fontSize: "45px", fontFamily: "Roboto" }}>
-          Salas disponibles
-        </Typography>
-      </Grid>
+      
     </Box>
   );
 };

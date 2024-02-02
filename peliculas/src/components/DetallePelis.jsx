@@ -1,9 +1,11 @@
 import React from 'react';
-import { Box, Grid, Typography, Card, Chip} from '@mui/material';
+import {  Typography,  Chip} from '@mui/material';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import { Container, Box, Button, TextField, Divider, Stack, Grid, Card, Paper, Avatar, CardHeader } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 
-const DetallePelis = ({ title, year, thumbnail, extract, genres }) => {
+const DetallePelis = ({ title, year, thumbnail, extract, genres, salas }) => {
  
   return (
     <Box sx={{ padding: 4, mt: 5 }}>
@@ -73,6 +75,62 @@ const DetallePelis = ({ title, year, thumbnail, extract, genres }) => {
         </Card>
       </Grid>
     </Grid>
+    <Grid style={{ paddingTop: "2%", width: "100%" }} item md={4}>
+        <Typography variant="h2" style={{ fontSize: "45px", fontFamily: "Roboto" }}>
+          Salas disponibles
+        </Typography>
+      </Grid>
+      <Box sx={{ mt: 10, width: "55%", height: "100%" }}>
+     {salas && salas.map((sala, index) => (
+    <Grid key={index} style={{ marginBottom: "18%" }}>
+            <Grid item md={4}>
+              <Container style={{ width: "100%", height: "100%" }}>
+                <Container style={{ display: "flex", marginBottom: "4%" }}>
+                  <Avatar variant='square'>
+                    <Typography >
+                      {`S${index + 1}`}
+                    </Typography>
+                  </Avatar>
+                  <Typography variant='h6' style={{ marginLeft: "2%", marginTop: "5px", fontFamily: "Roboto" }}>
+                    {sala.sala}
+                  </Typography>
+                </Container>
+
+                <Typography variant='body1' style={{ marginLeft: "5%", fontFamily: "Roboto" }}>
+                  {sala.description}
+                </Typography>
+              </Container>
+
+              <Grid sx={{ display: "flex", ml: 4, mb: 5 }}>
+                {sala.horarios.map((horario, horarioIndex) => (
+                  <Box
+                    key={horarioIndex}
+                    sx={{
+                      marginTop: '40px',
+                      width: '80px',
+                      height: '28px',
+                      border: '1px dashed #9747FF',
+                      borderRadius: '8px',
+                      display: 'flex',
+                      justifyContent: 'center',
+                      alignItems: 'center',
+                      backgroundColor: 'rgba(151, 71, 255, 0.04)',
+                      marginLeft: '20px',
+                      padding: "4px, 24px, 4px, 24px"
+                    }}
+                  >
+                    <Link to={`/peliculasReserva/${index}/${horarioIndex}`}>
+                      <Typography variant="h5" style={{ fontSize: '12px', color: "rgba(151, 71, 255, 1)" }}>
+                        {horario}
+                      </Typography>
+                    </Link>
+                  </Box>
+                ))}
+              </Grid>
+            </Grid>
+          </Grid>
+        ))}
+      </Box>
     </Box>
   );
 };
