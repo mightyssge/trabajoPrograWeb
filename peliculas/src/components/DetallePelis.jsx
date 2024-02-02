@@ -81,14 +81,14 @@ const DetallePelis = ({ title, year, thumbnail, extract, genres, salas }) => {
         </Typography>
       </Grid>
       <Box sx={{ mt: 10, width: "55%", height: "100%" }}>
-     {salas && salas.map((sala, index) => (
+  {salas && salas.map((sala, index) => (
     <Grid key={index} style={{ marginBottom: "18%" }}>
             <Grid item md={4}>
               <Container style={{ width: "100%", height: "100%" }}>
                 <Container style={{ display: "flex", marginBottom: "4%" }}>
                   <Avatar variant='square'>
                     <Typography >
-                      {`S${index + 1}`}
+                      {sala.siglas}
                     </Typography>
                   </Avatar>
                   <Typography variant='h6' style={{ marginLeft: "2%", marginTop: "5px", fontFamily: "Roboto" }}>
@@ -97,7 +97,7 @@ const DetallePelis = ({ title, year, thumbnail, extract, genres, salas }) => {
                 </Container>
 
                 <Typography variant='body1' style={{ marginLeft: "5%", fontFamily: "Roboto" }}>
-                  {sala.description}
+                {sala.address}
                 </Typography>
               </Container>
 
