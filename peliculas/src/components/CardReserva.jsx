@@ -31,7 +31,7 @@ const CardReserva = ({ peliculaActual}) => {
                     <LocationOnIcon />
                 </Icon>
                 <Typography color="#2196F3" variant="subtitle1" component="div" sx={{ marginLeft: '5px' }}>
-                    {peliculaActual.location}
+                    {peliculaActual.sala}
                 </Typography>
             </Box>
 

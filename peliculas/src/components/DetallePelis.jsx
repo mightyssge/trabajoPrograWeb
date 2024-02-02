@@ -9,12 +9,20 @@ const DetallePelis = ({ title, year, thumbnail, extract, genres, salas }) => {
   const [peliculaActual, setPeliculaActual] = useState({ title, year, thumbnail });
 
   const handleClick = (index, horarioIndex) => {
-    const horarioSeleccionado = salas[index].horarios[horarioIndex];
-    setPeliculaActual({ title, year, thumbnail, horarioSeleccionado });
-    console.log(`Información de la película: ${title}, Año: ${year}, Horario seleccionado: ${horarioSeleccionado}, Img: ${thumbnail}`);
-
-
-    navigate('/reserva', { state: { peliculaActual: { title, year, thumbnail, horarioSeleccionado } } });
+    const salaSeleccionada = salas[index];
+    const horarioSeleccionado = salaSeleccionada.horarios[horarioIndex];
+  
+    setPeliculaActual({
+      title,
+      year,
+      thumbnail,
+      horarioSeleccionado,
+      sala: salaSeleccionada.sala, // Agregamos el nombre de la sala al estado
+    });
+  
+    console.log(`Información de la película: ${title}, Año: ${year}, Sala: ${salaSeleccionada.sala}, Horario seleccionado: ${horarioSeleccionado}, Img: ${thumbnail}`);
+  
+    navigate('/reserva', { state: { peliculaActual: { title, year, thumbnail, horarioSeleccionado, sala: salaSeleccionada.sala } } });
   };
 
   return (
